@@ -45,7 +45,7 @@ def main():
                 time.sleep(0.2) 
                 pd.click() # second click
                 print(f"  • double-clicked #{i} at {pos}")
-                time.sleep(1.0)               
+                time.sleep(0.5)               
         time.sleep(INTERVAL)
 
 if __name__ == "__main__":
