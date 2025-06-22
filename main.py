@@ -10,7 +10,7 @@ REGION = (CLOSE_CX - BOX_SIZE // 2, CLOSE_CY - BOX_SIZE // 2, BOX_SIZE, BOX_SIZE
 
 OPEN_BUTTON   = (84, 1027)
 CLAIM_BUTTONS = [(1452, 788), (1295, 780), (1104, 791), (951,  784)]
-INTERVAL      = 4.0    
+INTERVAL      = 3.0    
 
 pyautogui.FAILSAFE = False
 pd.FAILSAFE       = False
@@ -45,7 +45,7 @@ def main():
                 time.sleep(0.2) 
                 pd.click() # second click
                 print(f"  • double-clicked #{i} at {pos}")
-                time.sleep(1)               
+                time.sleep(0.5)               
         time.sleep(INTERVAL)
 
 if __name__ == "__main__":
