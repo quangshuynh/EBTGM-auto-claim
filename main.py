@@ -9,7 +9,13 @@ BOX_SIZE = 100
 REGION = (CLOSE_CX - BOX_SIZE // 2, CLOSE_CY - BOX_SIZE // 2, BOX_SIZE, BOX_SIZE)
 
 OPEN_BUTTON   = (84, 1027)
-CLAIM_BUTTONS = [(1452, 788), (1295, 780), (1104, 791), (951,  784)]
+CLAIM_BUTTONS = [
+    (1452, 788), # 5xp
+    (1295, 780), # 10xp 
+    (1104, 791), # 30xp
+    (951,  784), # 100xp
+    (1053, 151) # save to bank
+    ]
 INTERVAL      = 3.0    
 
 pyautogui.FAILSAFE = False
